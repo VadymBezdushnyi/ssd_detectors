@@ -688,10 +688,4 @@ def preprocess_image(file_name, size=(300,300), lib='skimage'):
     
     return img
 
-    # %%timeit
-    # pil:     3.57 ms ± 17 µs
-    # scipy:   5.33 ms ± 15.2 µs
-    # opencv:  2.24 ms ± 11.2 µs
-    # skimage: 8.81 ms ± 25.3 µs
-    # per loop (mean ± std. dev. of 7 runs, 100 loops each)
     

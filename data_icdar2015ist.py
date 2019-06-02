@@ -37,7 +37,7 @@ class GTUtility(BaseGTUtility):
             boxes = []
             text = []
             gt_file_name = 'gt_' + os.path.splitext(image_name)[0] + '.txt'
-            with open(os.path.join(gt_path, gt_file_name), 'r', encoding='utf-8-sig') as f:
+            with open(os.path.join(gt_path, gt_file_name), 'r') as f:
                 for line in f:
                     line_split = line.strip().split(',')
                     box = [float(v) for v in line_split[0:8]]
